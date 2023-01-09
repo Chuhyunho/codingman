@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyunho</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <script src="app.js"></script>
+    <form id="login-form">
+        <img src="초코도넛.png" width="250" height="125"><br>
+        <input id="login-id"
+            type="text"
+            placeholder="아이디"
+            /><br>
+        <input id="login-password"
+            type="password"
+            placeholder="비밀번호"
+            />
+        <input type="submit" value="Log In"/>
+        <h3 style="color:red"></h3>
+    </form>
+    <h1 id="clock" class="hidden">00:00</h1>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form"class="hidden">
+        <input required type="text" placeholder="오늘의 할일"/>
+    </form>
+    <ul id="todo-list"></ul>
+    <script src="app.js"> </script>
 </body>
 </html>
